@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+    <link rel="stylesheet" href="style-formulaire.css">
+    <title>Formulaire de don</title>
+</head>
+
+
+<div class="header"  id="pageformulaire">
+  <h1>Association de défense des canidés de la ville de Brest</h1>
+</div>
+
+<body>
+  <div class="fusionnage">
+  <div class="split left">
+      <div class="centered">
+          <h1>Mon Don</h1> 
+          <h3>Je souhaite faire un don</h3>
+          <input type="checkbox" id="type1" name="type1" value="Financier">
+          <label for="type1">Financier</label> <br>
+          <label for="montant">Je souhaite donner :</label>
+          <input type="text" name="montant" id="montant" placeholder="Montant en chiffres" size="30" maxlength="1000"/> € <br> <br> <br>
+          <input type="checkbox" name="type2" id="type2" value="Temps">
+          <label for="type2">De Temps</label> <br>
+          Je souhaite
+          <select name="typetemps" id="typetemps" size="1">
+            <option>Faire des rondes avec notre groupe pour repérer les abus</option>
+            <option>Garder un animal en détresse à votre domicile</option> 
+            <option>Promener des animaux en détresse</option> 
+          </select> <br> <br> <br>
+          <input type="checkbox" name="type3" id="type3" value="Materiel">
+          <label for="type3">Matériel</label> <br>
+          Je souhaite faire un don de/d'
+          <select name="typemateriel" id="typemateriel" size="1">
+            <option>Croquettes chiot</option>
+            <option>Croquettes chien adulte</option>
+            <option>Boîtes de pâtée chiot</option> 
+            <option>Boîtes de pâtée chien adulte</option>
+            <option>Panier ou autre couchage</option> 
+            <option>Accessoires de sortie</option>
+            <option>Jouets</option>
+          </select> <br> <br> <br>
+          <img src="./attention.png" alt="panneau attention" width="30" height="23"> <span class="texte-attention"> Attention faire un don vous engage. Merci de vérifier vos capacités financières. </span>
+      </div>
+  </div>
+    
+    <div class="split right">
+      <div class="centered">
+          <h1>Mes coordonnées</h1>
+          <label for="lname">Nom:</label><br>
+          <input type="text" id="lname" name="lname" size="30" maxlength="1000" required="required"><br>
+          <label for="fname">Prénom:</label><br>
+          <input type="text" id="fname" name="fname" size="30" maxlength="1000" required="required"><br>
+          <label for="email">E-mail:</label><br>
+          <form action="/action_page.php">
+          <input type="text" id="email" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" placeholder="________________@_______.__" size="30" maxlength="1000" required="required"></form>
+          <label for="phone">Numéro de téléphone:</label> <br>
+          <form action="/action_page.php">
+          <input type="text" name="tel" id="tel" type="number" size="30" maxlength="1000" placeholder="0000000000" required="required"></form> <br>
+          <input type="checkbox" id="type4" name="type4" value="Accord" required="required">
+          <label for="type4">J'ai bien pris connaissances des <a href="page-reglement-dons.html"> conditions</a> de dons*</label> <br> <br>
+          <a href="./page-merci.html"><button> Envoyer  </button> </a>
+      </div>
+    </div>
+  </div><br>
+  <a href="./page-principale-asso.html"><button> Retour page principale </button> </a>
+  </body>
+  
+
+</html>

@@ -1,0 +1,24 @@
+  
+  .fusionnage {
+    width: 100%;
+    background-image: url("./chien8.png");
+    background-position: center;
+    cursor: url(./coeur.png), pointer;
+    
+  }
+  
+  .header {
+      padding: 23px;
+      text-align: left;
+      background: #02301e;
+      color: white;
+      font-size: 15px;
+    }
+
+
+.merci {
+  text-align: center;
+  font-size: xx-large;
+  color: red;
+  text-shadow:  1px 2px pink;
+}
